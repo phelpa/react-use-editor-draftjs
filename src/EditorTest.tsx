@@ -1,14 +1,13 @@
 
-import React from 'react'
-import useEditor from './useEditor'
+import { useEditor, TextEditor } from './useEditor'
 
 const EditorTest = () => {
 
-  const { TextEditor, editorProps, htmlContent } = useEditor()
+  const { editorHelpers, htmlContent } = useEditor()
 
   return (
     <>
-      <TextEditor {...editorProps} />
+      <TextEditor editorHelpers={editorHelpers} validateEmpty />
       <br/>
       <div>Html output : </div>
       {JSON.stringify(htmlContent, null, 2)}
