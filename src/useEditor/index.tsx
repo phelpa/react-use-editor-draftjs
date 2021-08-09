@@ -6,8 +6,8 @@ import { Editor, EditorProps } from 'react-draft-wysiwyg'
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 
 interface IEditorHelpers {
-  onEditorStateChange: (editorState: EditorState) => void;
-  checkIfEditorIsEmpty: () => boolean;
+  onEditorStateChange: (editorState: EditorState) => void
+  checkIfEditorIsEmpty: () => boolean
   handleSetText(event: any, value: any): void
 }
 
@@ -42,7 +42,6 @@ export const useEditor = (): IUseEditor => {
     (editorState: EditorState) => {
       checkIfEditorIsEmpty()
       setContent(editorState)
-
       setHtmlContent(formatEditorToHtml(content as EditorState))
     },
     [checkIfEditorIsEmpty, content]
