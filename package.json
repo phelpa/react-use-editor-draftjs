@@ -1,6 +1,8 @@
 {
   "name": "use-editor-draftjs",
-  "version": "1.0.4",
+  "version": "1.0.12",
+  "types": "./config.d.ts",
+  "main": "./build/useEditor/index.js",
   "dependencies": {
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
@@ -9,7 +11,7 @@
     "react-dom": "^17.0.2",
     "react-draft-wysiwyg": "^1.14.5",
     "react-scripts": "4.0.3",
-    "use-editor-draftjs": "^1.0.3"
+    "use-editor-draftjs": "^1.0.12"
   },
   "devDependencies": {
     "@types/draftjs-to-html": "^0.8.0",

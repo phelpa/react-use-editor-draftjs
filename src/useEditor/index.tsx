@@ -61,7 +61,7 @@ export const useEditor = (): IUseEditor => {
 
 interface ITextEditor extends EditorProps {
   editorHelpers: IEditorHelpers
-  validateEmpty: boolean
+  validateEmpty?: boolean
 }
 
 export const TextEditor: React.FC<ITextEditor> = memo(

@@ -14,15 +14,11 @@ interface IEditorHelpers {
   handleSetText(event: any, value: any): void
 }
 
-export const TextEditor: React.MemoExoticComponent<(props: IExtendedEditorProps) => JSX.Element>
+export const TextEditor: React.MemoExoticComponent<(props: ITextEditor) => JSX.Element>
 
 interface ITextEditor extends EditorProps {
   editorHelpers: IEditorHelpers
-  validateEmpty: boolean
-}
-
-interface IExtendedEditorProps extends EditorProps {
-  isEditorEmpty: boolean
+  validateEmpty?: boolean
 }
 
 
